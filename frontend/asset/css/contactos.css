@@ -60,15 +60,12 @@ h1{
     padding: var(--padding-nav);
     border: 2px solid var(--color_vino); 
     border-radius: var(--bordes);
-    background-color: var(--color_blanco); 
-    color: var(--color_blanco);
     outline: none;
     transition: all 0.3s ease-in-out;
 }
 
 .formulario_contactos input:focus {
     border-color:  var(--color_blanco);
-    background-color: var(--color_oscuro_trasparente);
 }
 
 .btn_enviar {
