@@ -1,164 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="frontend/asset/css/variables.css">
-    <link rel="stylesheet" href="frontend/asset/css/inicio.css">
-    <link rel="stylesheet" href="frontend/asset/css/nav_footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carta con Tulipanes Animados</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #5a2a6e, #a95fc1);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 100%;
+            background: linear-gradient(145deg, #6d3a8e, #a87bd6);
+            max-width: 600px;
+            padding: 40px 30px 60px 30px;
+            border-radius: 25px;
+            box-shadow: 0 0 30px rgba(168, 123, 214, 0.8);
+            color: #f8f0fb;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            margin-bottom: 0.5em;
+            text-shadow: 0 0 8px #d9b0f7;
+        }
+
+        p {
+            font-size: 1.3rem;
+            line-height: 1.5;
+            margin-bottom: 2em;
+            color: #e7d9f7;
+            text-shadow: 0 0 4px #9c7bbd;
+        }
+
+        button {
+            background-color: #d29ce2;
+            color: #3a0a6a;
+            border: none;
+            border-radius: 15px;
+            padding: 12px 28px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 0 10px #bb7de5;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #9c63ca;
+            color: #f6e9ff;
+        }
+
+        /* Canvas floral */
+        #flowerCanvas {
+            position: fixed;
+            pointer-events: none;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 25px;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- navegador -->
-    <div class="nav_content">
-        <div class="nav-logo">
-            <img class="logo_img" src="frontend/asset/img/logopolleria_inico.png" alt="logo_img">
-        </div>
 
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-btn">
-            <i class="fa-solid fa-bars"></i>  <!-- Ícono de hamburguesa -->
-            <i class="fa-solid fa-xmark"></i> <!-- Ícono de cerrar -->
-        </label>
-
-        <div class="nav-enlaces">
-            <ul>
-                <li><a class="preterminado_nav" href="/inicio.html">INICIO</a></li>
-                <li><a href="./frontend/vista/menu.html">MENÚ</a></li>
-                <li><a href="./frontend/vista/promociones.html">PROMOCIONES</a></li>
-                <li><a href="./frontend/vista/locales.html">LOCALES</a></li>
-                <li><a href="./frontend/vista/nosotros.html">NOSOTROS</a></li>
-                <li><a href="./frontend/vista/contactos.html">CONTACTOS</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- header banner -->
-    <header>
-
-        <div class="carousel">
-            <img class="img_header" src="frontend/asset/img/header_inicio.png" alt="Imagen 1">
-            <img class="img_header" src="frontend/asset/img/banner_inicio2.jpg" alt="Imagen 2">
-            <img class="img_header" src="frontend/asset/img/banner_incio3.png" alt="Imagen 3">
-        </div>
+    <div class="card">
         
-    </header>
-    <!-- contenido-->
-    <section>
-        <h1>NUESTRA CARTA WEB</h1>
-        <div class="seccion_galeria_Carta">
-            
-            <div class="contenedor_imgGaleria">
-                <img class="img_galeria" src="frontend/asset/img/img_cartaweb1.png" alt="">
-                <p>ENSALADAS</p>
-            </div>
+        <button id="openCardBtn">Presiona aqui</button>
+        <h1>Para ti, mi amor 💜</h1>
+        <p>Para ti mi baby linda tade casi toda la mañana haciendop esto tmre :v, pero dejame decir que te quiero muchisimo eres con la persona que quiero estar estar a tu lado <br>
+        me hace sentir muy especial juntos poder caminar y armar nuestro proyecto juntos pasamos muchas cosas y aveces suelen aver momentos dificiles en la cual es complicado <br>
+    salir de esos problemos pero se que juntos como equipo se puede , y yo se que tu no rindes facilmente eres una chica increible que me a enseñado muchas cosas y e aprendido de ellas <br>
+   aveces suelo malograr la relacion no es porque quiero simplemente soy muy impulsivo no me gusta aver las pelear y simplemente mi instinto hace culquier cosa para solucionar el problema <br>
+ pero ala final por impulso termino empeorando mas. Se que tal vez ya te e cansando seguro que si , pero yo no me e cansado de ti la vez que te ayuda o bueno apoye en tus problemas <br>
+ estube alli apoyandote tenia un dia cansado pero iba a escucharte a estar bien a tu lado , tal vez andes molesta aveces porque la malogro y asi no digo que me trates de entender solo digo <br>
+que quiero que seas mas cariñosa se que lo eres pero aveces si quiero un abrazo tuyo :c y un besito de la nada , enserio amo estar contigo aunque pienses que no te quiero <br>
+<center>ATT: Carlos Ore :3</center></p>
 
-            <div class="contenedor_imgGaleria">
-                <img class="img_galeria" src="frontend/asset/img/img_cartaweb2.png" alt="">
-                <p>ALL GIRL</p>
-            </div>
+        <button id="openCardBtn">Abrir carta</button>
 
-            <div class="contenedor_imgGaleria">
-                <img class="img_galeria" src="frontend/asset/img/img_cartaweb3.png" alt="img_galeria">
-                <p>PARRILLAS ESPECIALES</p>
-            </div>
+        <!-- Audio oculto -->
+        <audio id="audioPlayer" loop preload="auto" src="Lana del rey - Yes to heaven [Sub. Español].mp3"></audio>
 
-            <div class="contenedor_imgGaleria">
-                <img class="img_galeria" src="frontend/asset/img/img_cartaweb4.png" alt="img_galeria">
-                <p>ANTOJOS</p>
-            </div>
+        <!-- Canvas para animación floral -->
+    </div>   <canvas id="flowerCanvas"></canvas>
 
-            <div class="contenedor_imgGaleria">
-                <img class="img_galeria" src="frontend/asset/img/img_cartaweb5.png" alt="img_galeria">
-                <p>PIQUEOS PARA COMPARTIR</p>
-            </div>
+    <script>
+        // Audio y botón
+        const openCardBtn = document.getElementById('openCardBtn');
+        const audioPlayer = document.getElementById('audioPlayer');
+        let cardOpened = false;
 
-            <div class="contenedor_imgGaleria">
-                <img class="img_galeria" src="frontend/asset/img/img_cartaweb6.png" alt="img_galeria">
-                <p>POLLOS A LA BRASA</p>
-            </div>
+        openCardBtn.addEventListener('click', () => {
+            if (cardOpened) return;
 
-            <!-- promociones web-->
+            audioPlayer.volume = 1;
+            audioPlayer.play().catch(() => {
+                console.log("Interacción requerida para activar audio");
+            });
 
-            <div class="contenedor_promociones_web">
-                <h1>PROMOCION WEB</h1>
-                <div class="cotenedor_imgPromocion">
-                    <div class="padre_imgpromocion">
-                        <img class="img_promocion" src="frontend/asset/img/img_promocionWeb1.png" alt="img_promocion">
-                    </div>
+            openCardBtn.textContent = "Carta abierta 🎶";
+            openCardBtn.disabled = true;
+            cardOpened = true;
+        });
 
-                    <div class="contenedor_textopPromocion">
+        // Canvas tulipanes animados
+        const canvas = document.getElementById('flowerCanvas');
+        const ctx = canvas.getContext('2d');
 
-                        <span>
-                            <br> POLLOS A LA BRASA <br>
-                            <br> <span class="color_promocion">S/31.90 </span> <br>
-                            <button>Agregar</button>
-                        </span>
-                    </div>
+        function resize() {
+            canvas.width = canvas.clientWidth;
+            canvas.height = canvas.clientHeight;
+        }
+        resize();
+        window.addEventListener('resize', resize);
 
-                </div>
+        // Clase Tulipán estilizado
+        class Tulip {
+            constructor(x, y, scale, swingSpeed, colorPetal, colorStem) {
+                this.x = x;
+                this.y = y;
+                this.scale = scale;
+                this.swingSpeed = swingSpeed;
+                this.colorPetal = colorPetal;
+                this.colorStem = colorStem;
+                this.swingAngle = Math.random() * Math.PI * 2;
+            }
 
-                <div class="cotenedor_imgPromocion">
-                    <div class="padre_imgpromocion">
-                        <img class="img_promocion" src="frontend/asset/img/img_promocionWeb2.png" alt="img_promocion">
-                    </div>
+            draw(ctx) {
+                ctx.save();
+                ctx.translate(this.x, this.y);
 
-                    <div class="contenedor_textopPromocion">
+                // Balanceo suave
+                const swing = Math.sin(this.swingAngle) * 10;
+                ctx.rotate(swing * Math.PI / 180);
 
-                        <span>
-                            <br>VILLA DUO<br>
-                            <br> <span class="color_promocion">S/51.90 </span> <br>
-                            <button>Agregar</button>
-                        </span>
-                    </div>
+                ctx.scale(this.scale, this.scale);
 
-                </div>
+                // DIBUJAR tallo
+                ctx.beginPath();
+                ctx.strokeStyle = this.colorStem;
+                ctx.lineWidth = 4;
+                ctx.lineCap = "round";
+                ctx.moveTo(0, 0);
+                ctx.bezierCurveTo(10, 60, -10, 120, 0, 140);
+                ctx.stroke();
 
-                <div class="cotenedor_imgPromocion">
-                    <div class="padre_imgpromocion">
-                        <img class="img_promocion" src="frontend/asset/img/img_promocionWeb3.png" alt="img_promocion">
-                    </div>
+                // Hoja izquierda
+                ctx.beginPath();
+                ctx.fillStyle = this.colorStem;
+                ctx.moveTo(0, 80);
+                ctx.bezierCurveTo(-25, 75, -40, 90, -15, 110);
+                ctx.bezierCurveTo(-30, 130, -10, 130, 0, 110);
+                ctx.fill();
 
-                    <div class="contenedor_textopPromocion">
+                // Hoja derecha
+                ctx.beginPath();
+                ctx.fillStyle = this.colorStem;
+                ctx.moveTo(0, 90);
+                ctx.bezierCurveTo(15, 90, 35, 105, 20, 120);
+                ctx.bezierCurveTo(40, 130, 25, 130, 10, 110);
+                ctx.fill();
 
-                        <span>
-                            <br>LA CONTUNDENTE<br>
-                            <br> <span class="color_promocion">S/107.90 </span> <br>
-                            <button>Agregar</button>
-                        </span>
-                    </div>
+                // Pétalos (3 grandes)
+                ctx.fillStyle = this.colorPetal;
+                ctx.strokeStyle = "#7a2f8f";
+                ctx.lineWidth = 1.5;
 
-                </div>
+                // Central
+                ctx.beginPath();
+                ctx.moveTo(0, 0);
+                ctx.bezierCurveTo(25, -60, 10, -120, 0, -100);
+                ctx.bezierCurveTo(-10, -120, -25, -60, 0, 0);
+                ctx.fill();
+                ctx.stroke();
 
-                <div class="cotenedor_imgPromocion">
-                    <div class="padre_imgpromocion">
-                        <img class="img_promocion" src="frontend/asset/img/img_promocionWeb4.png" alt="img_promocion">
-                    </div>
+                // Izquierdo
+                ctx.beginPath();
+                ctx.moveTo(0, -20);
+                ctx.bezierCurveTo(-25, -50, -40, -80, -20, -90);
+                ctx.bezierCurveTo(-10, -80, -10, -40, 0, -20);
+                ctx.fill();
+                ctx.stroke();
 
-                    <div class="contenedor_textopPromocion">
+                // Derecho
+                ctx.beginPath();
+                ctx.moveTo(0, -20);
+                ctx.bezierCurveTo(25, -50, 40, -80, 20, -90);
+                ctx.bezierCurveTo(10, -80, 10, -40, 0, -20);
+                ctx.fill();
+                ctx.stroke();
 
-                        <span>
-                            <br>PROMO PATAS<br>
-                            <br> <span class="color_promocion">S/95.90 </span> <br>
-                            <button>Agregar</button>
-                        </span>
-                    </div>
+                ctx.restore();
+            }
 
-                </div>
+            update() {
+                this.swingAngle += this.swingSpeed;
+                if (this.swingAngle > Math.PI * 2) this.swingAngle -= Math.PI * 2;
+            }
+        }
 
-            </div>
+        // Crear tulipanes grandes y dispersos con degradados morados
+        const tulips = [];
+        const colorsPetal = [
+            "#d19fe8",
+            "#b87ad2",
+            "#a15ec0",
+            "#7f3db0",
+            "#5f2380"
+        ];
+        const colorsStem = [
+            "#4b2e61",
+            "#593776",
+            "#45255a"
+        ];
 
-        </div>
+        const totalTulips = 3;
 
-    </section>
+        for (let i = 0; i < totalTulips; i++) {
+            const x = 10 + Math.random() * (canvas.width - 100);
+            const y = 10 + Math.random() * (canvas.height - 50);
+            const scale = 0.6 + Math.random() * 0.3;
 
-    <!-- footer -->
-    <script src="frontend/asset/js/renderFooter.js" type="module"></script>
+            const swingSpeed = 0.005 + Math.random() * 0.007;
+            const colorPetal = colorsPetal[Math.floor(Math.random() * colorsPetal.length)];
+            const colorStem = colorsStem[Math.floor(Math.random() * colorsStem.length)];
 
+            tulips.push(new Tulip(x, y, scale, swingSpeed, colorPetal, colorStem));
+        }
+
+        // Animar tulipanes
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            tulips.forEach(tulip => {
+                tulip.update();
+                tulip.draw(ctx);
+            });
+            requestAnimationFrame(animate);
+        }
+        animate();
+
+    </script>
 
 </body>
 
